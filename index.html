@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+
+	<body>
+		<!--<script>
+		//计算
+			var hello = "Hello ";
+			hello += "World";
+			var age = 16 * 2 / 3;
+			document.write(hello+age);
+		</script>-->
+
+		<!--<script>
+		//判断
+			var age=18;
+			document.write("你的年龄是"+age);
+			if(age>18){
+				alert("成年了");
+			}else{
+				alert("还小呢");
+			}
+			alert("年龄决定了你的年龄世界，珍惜吧");
+		</script>-->
+
+		<!--<script>
+			//分支
+			var type=3;
+			switch(type){
+				case 1:
+				case 2:
+					alert("你好");
+					break;
+				case 3:
+					alert("晚上好");
+				case 4:
+					alert("再见");
+					break;
+				default:
+					alert("啊，什么啊？");
+			}
+		</script>-->
+
+		<script>
+			 //循环
+			 //			var count = 1;
+			 //			var LIMIT = 5;
+			 //			while (count<LIMIT){
+			 //				alert(count);
+			 //				count ++;
+			 //			}
+			 //循环求最大公约数
+			 //			var u = 42;
+			 //			var v = 23;
+			 //			var temp;
+			 //			while (v != 0){
+			 //				temp = u % v;
+			 //				u = v;
+			 //				v = temp;
+			 //			}
+			 //			alert("最大公约数是："+u);
+			 //无限循环
+			 //			var count = 1;
+			 //			while (count!=50){
+			 //				count+=2;
+			 //				alert(count);
+			 //			}
+			 //函数
+			 //			var u = 42;
+			 //			var v = 24;
+			 //			function print(s){
+			 //				document.write(s);
+			 //			}
+			 //			function println(s){
+			 //				print(s+"<br/>");
+			 //			}
+			 //			function max(a,b){
+			 //				return a>b?a:b;
+			 //			}
+			 //			function add(a,b){
+			 //				return a+b;
+			 //			}
+			 //			function cal(f,a,b){
+			 //				return f(a,b);
+			 //			}
+			 //			function gcd(u, v) {
+			 //				var a = u;
+			 //				var b = v;
+			 //				var temp;
+			 //				while (v != 0) {
+			 //					temp = u % v;
+			 //					u = v;
+			 //					v = temp;
+			 //				}
+			 //				return u;
+			 //				print(a+"和"+b+"的最大公约数是：" + u);
+			 //			}
+			 //			println(cal(add,5,6));
+			 //			println(max(4,3));
+			 //			println(u+"和"+v+"的最大公约数是：" + gcd(u,v))
+			 //数组
+			var colors = ["red", "blue", "green"];
+			 //			alert(colors[0]);
+			 //			alert(colors[2]);
+			 //			alert(colors[3]);
+			 //			colors[2] = "black";
+			 //			colors[3] = "brown";
+			 //			colors[100] = "cyan";
+			 //			alert(colors[0]);
+			 //			alert(colors[2]);
+			 //			alert(colors[3]);
+			 //			alert(colors[100]);
+			 //			alert(colors[99]);
+//			var names = [];
+//			colors.length=2;
+//			alert(colors[2]);
+//			alert("colors.length = " + colors.length);
+//			alert("colors.length = " + names.length);
+//			colors[4] = "brown";
+//			alert("colors.length = " + colors.length);
+
+//			colors.length=4;
+//			alert(colors[3]);
+//			colors[colors.length] = "black";
+//			colors[colors.length] = "brown";
+//			alert(colors[colors.length-2]);
+//			alert(colors[colors.length-1]);
+			
+//			colors.length=2;
+//			colors.length=3;
+//			alert(colors[2]);
+
+			//转换数组为字符串
+//			alert(colors.toString());
+//			alert(colors.valueOf());
+//			alert(colors);
+//			alert(colors.join(","));
+//			alert(colors.join("||"));
+
+//			//堆栈操作
+//			var colors = new Array();
+//			var count = colors.push("red","green");
+//			alert(count);
+//			count = colors.push("black");
+//			alert(count);
+//			//先进后出(堆栈操作)
+//			var item = colors.pop();
+//			alert(item);
+//			alert(colors.length);
+//			//先进先出(队列操作)
+//			var item = colors.shift();
+//			alert(item);
+//			alert(colors.length);
+
+			//数组排序
+			//sort()排序（非从小到大），按数字序列排序，
+//			var values = [0,1,5,10,15];
+//			//结果0,1,5,10,15
+//			values.sort();
+//			alert(values);
+			//reverse()将原来顺序倒过来
+//			var values = [1,2,3,4,5];
+//			values.reverse(values);
+//			alert(values);
+
+			//数组连接
+			var colors2 = colors.concat("yellow",["black","brown"]);
+			alert(colors2);
+			
+			//数组截取从1到3
+			var colors3 = colors2.slice(1,4);
+			alert(colors3);
+
+			//数组删除插入splice()取出并修改原来数组
+//			var colors4 = colors.splice(0,2);
+//			alert(colors4);
+//			alert(colors);
+
+//			var colors5 = colors.splice(2,0,"red","blue");
+//			alert(colors5);
+//			alert(colors);
+
+			var colors6 = colors.splice(2,1,"red","blue");
+			alert(colors6);
+			alert(colors);
+			
+			
+		</script>
+		
+	</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>JavaScript对象</title>
+		<script type="text/javascript">
+			var count = 10;
+			function update(){
+				if(count>0){
+					document.write(count+"<br />");
+					count--;
+				}
+			}
+			function guanbi(){
+//				w.close();
+			}
+			function jump(){
+				location = "http://www.baidu.com";
+			}
+		</script>
+	</head>
+	<body onload="setInterval('jump()',2000);">
+		<script type="text/javascript">
+			//对象
+//			var o = new Object();
+//			o.title = "测试";
+//			o.name = "伍兆光";
+//			o.age = 24;
+//			o.cupter = new Object();
+//			o.cupter.title = "测试2";
+////			alert(o);
+//			var message;
+//			for(var x in o){
+//				alert(x+"="+o[x]);
+//				message +=x+"="+o[x]+"<\n>";
+//			}
+
+			//构造方法
+//			function Rect(w,h){
+//				this.width = w;
+//				this.height = h;
+//				this.area = function(){
+//					return this.width*this.height;
+//				}
+//			}
+//			var r = new Rect(5,10);
+//			alert(r.area());
+//			r.width = 10;
+//			alert(r.area());
+			
+			//组合原型和构造方法
+//			function person(name,age,job){
+//				this.name = name;
+//				this.age = age;
+//				this.job = job;
+//				this.friends = ["heii","hell"];
+//			}
+//			person.prototype = {
+//				construtor:person,
+//				sayname:function(){
+//					alert(this.name);
+//				}
+//			}
+//			var person1 = new person("join","20","sofrware engineer");
+//			var person2 = new person("somme","23","doctor");
+//			person1.friends.push("jonner");
+//			alert(person1.friends);//heii,hell,jonner
+//			alert(person2.friends);//heii,hell
+
+			//全剧对象windows
+//			var anser = 12;
+//			alert(window.anser);
+			
+			//document
+//			for(x in document){
+//				document.write(x+"<br/>");
+//			}
+			
+			//简单提示框
+//			if(confirm("继续吗？")){
+//				alert("继续");
+//			}else{
+//				alert("再见");
+//			}
+//			var name = prompt("你的名字是？");
+//			alert("你好"+name);
+			
+			//window全局对象
+//			var w = window.open("small.html","small","width:200,height:100");
+//			w.onmouseover(w.moveTo(600,500));
+			var x = 0;
+			var y = 0;
+			function windows_move(){
+				if(x<10){
+					w.moveTo(x,y);
+					x++;
+					y++;
+//					alert(y);
+				}
+			}
+			
+			//计时器setInterval
+//			setInterval("windows_move()",1000);
+//			w.moveTo(x,y);
+
+			//location对象
+			alert(location);
+//			window.location = "http://www.baidu.com";
+		</script>
+		<!--事件触发器-->
+		<!--<p onmouseover="alert('hi');" onmouseout="alert('bye');">yigeduanluo</p>-->
+		
+		
+		<p onmouseover="status='网易云学习';" onmouseout="status='';">网易云学习</p>
+	</body>
+</html>
