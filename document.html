@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<title>document</title>
+		<script type="text/javascript">
+			
+		</script>
 	</head>
+
 	<body onload="setInterval('show()',500);">
 		<img id="anm" name="anm" src="img/0.jpg" height=100 />
 		<p id="p1" name="dancing">一个段落</p>
 		<br />
 		<script>
-//			alert(document.images[0].src);
-//			alert(document.getElementById("p1"));
-
-//			var p1 = document.getElementById("p1");
-//			p1.bgColor = "#00ff00";
-
-//			alert(document.baidu_logo.height);
-//			document.baidu_logo.height=200;
-			
-			
-//			document.test.src = "img/1.jpg";
-//			for(x in document.baidu_logo){
-//				document.write(x+"<br />");
-//			}
-
-
+			//			alert(document.images[0].src);
+			//			alert(document.getElementById("p1"));
+			//			var p1 = document.getElementById("p1");
+			//			p1.bgColor = "#00ff00";
+			//			alert(document.baidu_logo.height);
+			//			document.baidu_logo.height=200;
+			//			document.test.src = "img/1.jpg";
+			//			for(x in document.baidu_logo){
+			//				document.write(x+"<br />");
+			//			}
 			var images = new Array(6);
 			var index = 1;
 			var anm = document.getElementById("anm");
-			for(var i=0;i<6;i++){
+			for (var i = 0; i < 6; i++) {
 				images[i] = new Image();
-				images[i].src = "img/"+i+".jpg";
-//				document.write(images[i].src);
+				images[i].src = "img/" + i + ".jpg";
+//				document.write(images[i].src+"<br />");
 			}
-			function show(){
+//			alert(images[index].src);
+			function show() {
 				anm.src = images[index].src;
-				index = (index+1)%6;
+				index = (index + 1)%6;
 			}
+				
 		</script>
 	</body>
+
 </html>
