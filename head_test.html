@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<script type="text/javascript" charset="UTF-8">
+			mui.init();
+		</script>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav" id="index_header">
+			<h1 class="mui-title">head_test</h1>
+		</header>
+		<div class="mui-content">
+			<div class="mui-content">
+				123
+				<br /> 123
+				<br /> 123
+				<br /> 123
+				<br /> 123
+				<br /> 123
+				<br /> 123
+				<br /> 123
+				<br /> 123
+				<br /> 123
+				<br /> 123
+				<br /> 123
+				<br /> 123
+				<br /> 123
+				<br /> 123
+				<br /> 123
+				<br /> 123
+				<br /> 123
+				<br /> 123
+				<br /> 123
+				<br /> 123
+				<br /> 123
+				<br /> 123
+				<br /> 123
+				<br /> 123
+				<br /> 123
+				<br /> 123
+				<br /> 123
+				<br /> 123
+				<br /> 123
+				<br /> 123
+				<br /> 123
+				<br /> 123
+				<br /> 123
+				<br /> 123
+				<br /> 123
+				<br /> 123
+				<br /> 123
+				<br /> 123
+				<br /> 123
+				<br /> 123
+				<br /> 123
+				<br /> 123
+				<br /> 123
+				<br />
+			</div>
+		</div>
+		<!--<script type="text/javascript">
+			document.getElementsByTagName("body")[0].onscroll = function() {
+				if (document.getElementsByTagName("body")[0].scrollTop > 600) {
+					alert("网页太长");
+				}
+			}
+		</script>-->
+
+		<script>
+			var header = document.getElementById("index_header");
+			var scrollFunc = function(e) {
+					var direct = 0;
+					e = e || window.event;
+					if (e.wheelDelta) { //判断浏览器IE，谷歌滑轮事件             
+						if (e.wheelDelta > 0) { //当滑轮向上滚动时
+							//							alert("滑轮向上滚动");
+							header.style.display = "block";
+						}
+						if (e.wheelDelta < 0) { //当滑轮向下滚动时
+							//							alert("滑轮向下滚动");
+							header.style.display = "none";
+						}
+					} else if (e.detail) { //Firefox滑轮事件
+						if (e.detail > 0) { //当滑轮向上滚动时
+							//							alert("滑轮向上滚动");
+							header.style.display = "block";
+						}
+						if (e.detail < 0) { //当滑轮向下滚动时
+							//							alert("滑轮向下滚动");
+							header.style.display = "none";
+						}
+					}
+//					ScrollText(direct);
+				}
+				//给页面绑定滑轮滚动事件
+			if (document.addEventListener) {
+				document.addEventListener('DOMMouseScroll', scrollFunc, false);
+			}
+			//滚动滑轮触发scrollFunc方法
+			window.onmousewheel = document.onmousewheel = scrollFunc;
+		</script>
+	</body>
+
+</html>

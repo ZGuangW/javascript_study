@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 	<head>
@@ -8,20 +9,24 @@
 
 	<body>
 		<input type="text" id="text_url" />
-		<input type="button" onclick="dl()" value="确定">
-		<iframe id="haha" name="haha" src="http://www.baidu.com"></iframe>
+		<input type="button" onclick="dl()" value="确定" />
+		<br />
+		<iframe id="haha" name="haha" src="http://www.baidu.com" width="80%" height="800px"></iframe>
+
 		<script>
-//			var url = document.getElementById("text_url");
-//			var haha = document.getElementById("haha");
-//			haha.src = "http://" + url;
+			var url = document.getElementById("text_url");
+			var haha = document.getElementById("haha");
+			//			haha.src = (haha.src.substring(0, 7) == "http://") ? haha.src : "http://" + haha.src;
 			$f = function(p) {
 				return document.frames ? document.frames[p] : $(p).contentWindow;
 			}
 
 			function dl() {
-				alert(document.getElementById("haha").src);
-				alert($f("haha").document.body.innerHTML);
+				//				alert(document.getElementById("haha").src);
+				//				alert($f("haha").document.body.innerHTML);
+				haha.src = (url.value.substring(0, 7) == "http://") ? url.value : "http://" + url.value;
 			}
+			
 		</script>
 	</body>
 
